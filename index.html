@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="JP Equity Data Sync は、個人の日本株研究で使用する外部データをGoogle Driveへ差分保存する非公開の自動更新ツールです。">
+<title>JP Equity Data Sync — アプリ情報</title>
+<style>:root{color-scheme:light;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;color:#1f2937;background:#f8fafc}*{box-sizing:border-box}body{margin:0}main{max-width:760px;margin:0 auto;padding:48px 22px 80px}.tag{display:inline-block;color:#155e75;background:#cffafe;border-radius:20px;padding:6px 12px;font-size:13px;font-weight:700}h1{font-size:clamp(30px,5vw,44px);line-height:1.2;letter-spacing:-.02em}h2{font-size:20px;margin-top:32px}.lead{font-size:18px;line-height:1.8;color:#475569}p,li{line-height:1.85}section{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:24px;margin:20px 0;box-shadow:0 4px 16px #0f172a06}a{color:#0369a1}a:hover{text-decoration-thickness:2px}.small,footer{color:#64748b;font-size:13px}footer{margin-top:44px;border-top:1px solid #e2e8f0;padding-top:20px}code{overflow-wrap:anywhere}</style>
+</head>
+<body>
+<main>
+<span class="tag">PERSONAL RESEARCH TOOL</span>
+<h1>JP Equity Data Sync</h1>
+<p class="lead">日本株の個人研究で使う財務・配当データを、Google Drive上の研究フォルダへ定期的に取り込むための自動更新ツールです。</p>
+<section>
+<h2>アプリの役割</h2>
+<p>IRBANK、Hachiquant、EDINET DBなどから研究に必要なデータを取得し、所有者本人のGoogle Driveにある指定フォルダのファイルを差分更新します。処理は非公開のGitHubリポジトリで管理するGitHub Actionsから実行します。</p>
+<p>これは所有者本人だけが利用する非公開の研究用プログラムであり、一般向けサービスではありません。この公開ページには、投資情報・研究データ・認証情報を掲載しません。</p>
+</section>
+<section>
+<h2>Google Driveへのアクセス</h2>
+<p>自動更新のため、Google OAuthでDriveの読み書き権限を取得します。認可されるスコープは <code>https://www.googleapis.com/auth/drive</code> で、Google Drive全体へのアクセスを許す広い権限です。プログラムは指定された研究用フォルダ内のデータ処理にのみ利用する設計です。</p>
+<p>詳しい取り扱いは<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+</section>
+<section>
+<h2>お問い合わせ</h2>
+<p>アプリの管理者への連絡は<a href="https://github.com/hiroshi-atu-tomo/hiroshi-atu-tomo.github.io/issues">GitHub Issues</a>をご利用ください。公開欄にAPIキーや個人情報を記載しないでください。</p>
+</section>
+<footer>© 2026 JP Equity Data Sync · <a href="./privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
